@@ -20,7 +20,7 @@ export default function About() {
         {/* Stats Section */}
         <div className="my-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-gray-100 p-6 rounded-lg text-center">
-            <h3 className="text-4xl font-bold text-teal-600">35+</h3>
+            <h3 className="text-4xl font-bold text-teal-600">42+</h3>
             <p className="text-lg text-gray-700">GitHub Repositories</p>
           </div>
           <div className="bg-gray-100 p-6 rounded-lg text-center">
