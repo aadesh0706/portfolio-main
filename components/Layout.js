@@ -24,8 +24,28 @@ const Layout = ({ children }) => {
   return (
     <div>
     <Head>
-        <title>Aadesh Gulumbe - Portfolio</title>
+        <title>Aadesh Gulumbe</title>
         <meta name="description" content="Aadesh Gulumbe - Software Developer Portfolio" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Aadesh Gulumbe",
+              jobTitle: "Software Developer",
+              url: "https://aadeshgulumbe.me",
+              sameAs: [
+                "https://www.linkedin.com/in/aadesh-gulumbe-b965b0246",
+                "https://github.com/aadesh0706",
+                "https://www.youtube.com/@marathicodingzone",
+              ],
+              image: "/path/to/your/image.jpg", // Replace with your actual image path
+              description:
+                "I'm a passionate software developer currently pursuing a degree in Information Technology.",
+            }),
+          }}
+        />
       </Head>
 
       {/* Navbar */}

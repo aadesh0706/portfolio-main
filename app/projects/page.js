@@ -2,6 +2,7 @@
 import Layout from '../../components/Layout';
 
 export default function Projects() {
+
   const projects = [
     {
       title: "Booksnap",
@@ -20,23 +21,30 @@ export default function Projects() {
       description: "A Chrome extension to block YouTube ads.",
       github: "https://github.com/aadesh0706/Youtube-AdBlocker",
       image: "https://img.youtube.com/vi/bFTARWEsZDw/0.jpg"
+    },
+    {
+        title: "Introduction To Python",
+        image: "https://img.youtube.com/vi/XdTg0RgOQ0k/0.jpg", // Replace with the actual image path
+        youtube: "https://youtu.be/XdTg0RgOQ0k?si=69wMligUzwwKBzB5",
+        description: "A comprehensive introduction to Python programming, covering the basics and key concepts to get started with coding."
+    },
+    {
+        title: "Mojo Programming Language: The Future of AI Development",
+        image: "https://img.youtube.com/vi/82QU7GDM4BE/0.jpg", // Replace with the actual image path
+        youtube: "https://youtu.be/82QU7GDM4BE",
+        description: "An exploration of Mojo, a new programming language designed for AI development, showcasing its features and potential applications."
+    },
+    {
+        title: "How to Submit LetsUpgrade Assignment and get Certificate",
+        image: "https://img.youtube.com/vi/3jXOOVGAg6s/0.jpg", // Replace with the actual image path
+        youtube: "https://youtu.be/3jXOOVGAg6s?si=8UIdwn1uExqKfEWO",
+        description: "A tutorial on how to effectively submit assignments on the LetsUpgrade platform and obtain certificates for your courses."
     }
-  ];
+];
+
 
   return (
     <Layout>
-      {/* <nav className="bg-gray-800 shadow-md">
-        <div className="container mx-auto p-4 flex justify-between">
-          <div className="font-bold text-2xl text-blue-300">Aadesh Gulumbe</div>
-          <div className="space-x-6">
-            <Link href="/" className="text-lg text-gray-200 hover:text-blue-600">Home</Link>
-            <Link href="/about" className="text-lg text-gray-200 hover:text-blue-600">About</Link>
-            <Link href="/projects" className="text-lg text-gray-200 hover:text-blue-600">Projects</Link>
-            <Link href="/contact" className="text-lg text-gray-200 hover:text-blue-600">Contact</Link>
-          </div>
-        </div>
-      </nav> */}
-
       {/* Projects Section */}
       <section className="container mx-auto p-8">
         <h1 className="text-5xl font-bold mb-6">My Projects</h1>
@@ -59,10 +67,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Footer */}
-      {/* <footer className="bg-gray-800 text-center py-4">
-        <p className="text-gray-400">&copy; {new Date().getFullYear()} Aadesh Gulumbe. All rights reserved.</p>
-      </footer> */}
-    </Layout>
+     </Layout>
   );
 }
