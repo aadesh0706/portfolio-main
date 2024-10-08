@@ -17,7 +17,7 @@ export default function Contact() {
     <Layout>
       <section className="container mx-auto p-8">
         <h1 className="text-5xl font-bold mb-6">Contact Me</h1>
-        <form onSubmit={handleSubmit} className="bg-gray-700 p-6 rounded-lg">
+        // <form onSubmit={handleSubmit} className="bg-gray-700 p-6 rounded-lg">
           // <div className="mb-4">
           //   <label className="block text-gray-300 mb-2" htmlFor="name">Name</label>
           //   <input
@@ -51,9 +51,10 @@ export default function Contact() {
           //     required
           //   ></textarea>
           // </div>
-          <button href="https://forms.gle/8rzfaKavu7SvB7P39" type="submit" className="px-6 py-2 bg-teal-500 text-white rounded-full">Send Message</button>
-        </form>
-      </section>
+          
+        // </form>
+      <button href="https://forms.gle/8rzfaKavu7SvB7P39" type="submit" className="px-6 py-2 bg-teal-500 text-white rounded-full">Send Message</button>
+    </section>
     </Layout>
   );
 }
