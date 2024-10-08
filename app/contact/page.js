@@ -22,7 +22,7 @@ export default function Contact() {
         <form onSubmit={handleSubmit} className="bg-gray-700 p-6 rounded-lg flex justify-center items-center h-64">
           <button type="submit" className="px-6 py-2 bg-teal-500 text-white rounded-full">Send Message</button>
         </form>
-      </section>
+    </section>
     </Layout>
   );
 }
