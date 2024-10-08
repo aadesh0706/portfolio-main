@@ -53,7 +53,7 @@ export default function Contact() {
           // </div>
           
         // </form>
-      <button href="https://forms.gle/8rzfaKavu7SvB7P39" type="submit" className="px-6 py-2 bg-teal-500 text-white rounded-full">Send Message</button>
+      <a href="https://forms.gle/8rzfaKavu7SvB7P39"><button type="submit" className="px-6 py-2 bg-teal-500 text-white rounded-full">Send Message</button></a>
     </section>
     </Layout>
   );
