@@ -11,7 +11,7 @@ export default function Contact() {
     e.preventDefault();
     // Handle form submission logic (e.g., send email or message)
     console.log('Submitted:', { name, email, message });
-  };
+  }; 
 
   return (
     <Layout>
