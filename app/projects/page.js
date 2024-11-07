@@ -63,13 +63,16 @@ export default function Projects() {
                 View on GitHub
               </a>
             </div>
-        <Link href="https://drive.google.com/drive/folders/1FfXPK5TsR74SM5ewjydE8vV4aaiGgFZm?usp=drive_link">
-            <a color="primary" type="button" radius="sm">
-                    Login
-              </a>
-        </Link>
           ))}
         </div>
+            <a
+                href={"https://drive.google.com/drive/folders/1FfXPK5TsR74SM5ewjydE8vV4aaiGgFZm?usp=drive_link"}
+                target="_blank"
+                className="text-blue-300 hover:underline"
+                rel="noopener noreferrer"
+              >
+                Sign In
+              </a>
       </section>
 
      </Layout>
