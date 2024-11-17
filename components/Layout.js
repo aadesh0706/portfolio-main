@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     <Head>
         <title>Aadesh Gulumbe</title>
         <meta name="description" content="Aadesh Gulumbe - Software Developer Portfolio" />
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow"/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
