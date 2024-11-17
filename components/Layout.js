@@ -1,5 +1,4 @@
 "use client";
-// components/Layout.js
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -7,12 +6,10 @@ import { useEffect, useState } from 'react';
 const Layout = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Toggle dark mode based on user's preference
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Apply dark mode class to the body
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('bg-gray-900', 'text-white');
@@ -23,27 +20,42 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-    <Head>
-        <title>Aadesh Gulumbe</title>
-        <meta name="description" content="Aadesh Gulumbe - Software Developer Portfolio" />
-        <meta name="robots" content="noindex, nofollow"/>
+      <Head>
+        <title>Aadesh Gulumbe | Software Developer | Portfolio</title>
+        <meta name="description" content="Aadesh Gulumbe - Software Developer, specializing in web and mobile applications. Explore my projects, blog, and more on my portfolio website." />
+        <meta name="keywords" content="Aadesh Gulumbe, software developer, web development, mobile development, portfolio, JavaScript, React, Node.js" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://aadeshgulumbe.me" />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Aadesh Gulumbe | Software Developer | Portfolio" />
+        <meta property="og:description" content="Aadesh Gulumbe - Software Developer, specializing in web and mobile applications. Explore my projects, blog, and more on my portfolio website." />
+        <meta property="og:image" content="https://aadeshgulumbe.me/path-to-your-image.jpg" />
+        <meta property="og:url" content="https://aadeshgulumbe.me" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Aadesh Gulumbe | Software Developer | Portfolio" />
+        <meta name="twitter:description" content="Aadesh Gulumbe - Software Developer, specializing in web and mobile applications. Explore my projects, blog, and more on my portfolio website." />
+        <meta name="twitter:image" content="https://aadeshgulumbe.me/path-to-your-image.jpg" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Aadesh Gulumbe",
-              jobTitle: "Software Developer",
-              url: "https://aadeshgulumbe.me",
-              sameAs: [
+              "name": "Aadesh Gulumbe",
+              "jobTitle": "Software Developer",
+              "url": "https://aadeshgulumbe.me",
+              "sameAs": [
                 "https://www.linkedin.com/in/aadesh-gulumbe-b965b0246",
                 "https://github.com/aadesh0706",
-                "https://www.youtube.com/@marathicodingzone",
+                "https://www.youtube.com/@marathicodingzone"
               ],
-              image: "/path/to/your/image.jpg", // Replace with your actual image path
-              description:
-                "I'm a passionate software developer currently pursuing a degree in Information Technology.",
+              "image": "https://aadeshgulumbe.me/path-to-your-image.jpg", // Replace with your actual image path
+              "description": "Aadesh Gulumbe is a passionate software developer who is working on innovative web and mobile applications. Check out my portfolio for more."
             }),
           }}
         />
@@ -52,7 +64,6 @@ const Layout = ({ children }) => {
       {/* Navbar */}
       <nav className="bg-gray-800 shadow-md">
         <div className="container mx-auto p-4 flex justify-between">
-          {/* <div className="font-bold text-2xl text-blue-300">Aadesh Gulumbe</div> */}
           <Link href="/" className="text-3xl font-bold hover:text-teal-500">
               Aadesh Gulumbe
             </Link>
@@ -68,28 +79,15 @@ const Layout = ({ children }) => {
       {/* Main Content */}
       <main>{children}</main>
 
-      {/* Footer */}
-      {/* <footer className="bg-gray-800 text-center py-4">
-        <p className="text-gray-400">&copy; {new Date().getFullYear()} Aadesh Gulumbe. All rights reserved.</p>
-      </footer> */}
       {/* Footer with Social Links */}
       <footer className="bg-gray-800 text-center py-4">
-          <div className="mb-4 flex justify-center">
-            <Link href="https://github.com/aadesh0706" target="_blank" className="mx-2 text-gray-400 hover:text-blue-400">
-              <i className="fa fa-github fa-lg"></i>
-            </Link>
-            <Link href="https://www.linkedin.com/in/aadesh-gulumbe-b965b0246" target="_blank" className="mx-2 text-gray-400 hover:text-blue-400">
-              <i className="fa fa-linkedin fa-lg"></i>
-            </Link>
-            <Link href="https://www.youtube.com/@marathicodingzone" target="_blank" className="mx-2 text-gray-400 hover:text-blue-400">
-              <i className="fa fa-youtube fa-lg"></i>
-            </Link>
-            <Link href="https://aadesh0706.github.io/portfolio/" target="_blank" className="mx-2 text-gray-400 hover:text-blue-400">
-              <i className="fa fa-globe fa-lg"></i>
-            </Link>
-          </div>
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Aadesh Gulumbe. All rights reserved.</p>
-        </footer>
+        <div className="mb-4 flex justify-center">
+          <Link href="https://github.com/aadesh0706" target="_blank" className="mx-2 text-gray-200 hover:text-teal-500">GitHub</Link>
+          <Link href="https://www.linkedin.com/in/aadesh-gulumbe-b965b0246" target="_blank" className="mx-2 text-gray-200 hover:text-teal-500">LinkedIn</Link>
+          <Link href="https://www.youtube.com/@marathicodingzone" target="_blank" className="mx-2 text-gray-200 hover:text-teal-500">YouTube</Link>
+        </div>
+        <p className="text-sm text-gray-200">© {new Date().getFullYear()} Aadesh Gulumbe</p>
+      </footer>
     </div>
   );
 };
